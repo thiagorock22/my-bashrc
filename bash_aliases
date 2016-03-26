@@ -85,4 +85,9 @@ alias cbwd="pwd | cb"
 # Copy most recent command in bash history
 alias cbhs="cat $HISTFILE | tail -n 1 | cb" 
 
-
+#dockerize-commands
+alias composer="docker run --rm -u $UID -v $PWD:/app composer/composer"
+alias node="docker run -ti --rm -u $UID -v `pwd`:/data dragonmantank/nodejs-grunt-bower node"
+alias grunt="docker run -ti --rm -u $UID -v `pwd`:/data dragonmantank/nodejs-grunt-bower grunt"
+alias npm="docker run -ti --rm -u $UID -v `pwd`:/data dragonmantank/nodejs-grunt-bower npm"
+alias bower="docker run -ti --rm -u $UID -v `pwd`:/data dragonmantank/nodejs-grunt-bower bower"
