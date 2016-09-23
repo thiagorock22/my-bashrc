@@ -1,8 +1,3 @@
-# Vagrant
-alias vagrant_www='cd ~/vagrant/www'
-alias vagrant_up='cd ~/vagrant/www && vagrant up'
-alias vagrant_halt='cd ~/vagrant/www && vagrant halt'
-
 #Productivity
 mcd() { mkdir -p "$1"; cd "$1";} 
 alias apt-get='sudo apt-get'
@@ -86,8 +81,8 @@ alias cbwd="pwd | cb"
 alias cbhs="cat $HISTFILE | tail -n 1 | cb" 
 
 #dockerize-commands
-alias composer="docker run --rm -u $UID -v $PWD:/app composer/composer"
-alias node="docker run -ti --rm -u $UID -v `pwd`:/data dragonmantank/nodejs-grunt-bower node"
-alias grunt="docker run -ti --rm -u $UID -v `pwd`:/data dragonmantank/nodejs-grunt-bower grunt"
-alias npm="docker run -ti --rm -u $UID -v `pwd`:/data dragonmantank/nodejs-grunt-bower npm"
-alias bower="docker run -ti --rm -u $UID -v `pwd`:/data dragonmantank/nodejs-grunt-bower bower"
+# alias composer="docker run --rm -v `pwd`:/app composer/composer"
+# alias node="docker run -ti --rm -u $UID -v `pwd`:/data dragonmantank/nodejs-grunt-bower node"
+# alias grunt="docker run -ti --rm -u $UID -v `pwd`:/data dragonmantank/nodejs-grunt-bower grunt"
+# alias npm="docker run -ti --rm -u $UID -v `pwd`:/data dragonmantank/nodejs-grunt-bower npm"
+# alias bower="docker run -ti --rm -u $UID -v `pwd`:/data dragonmantank/nodejs-grunt-bower bower"
